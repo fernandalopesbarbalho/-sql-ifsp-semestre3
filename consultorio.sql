@@ -6,7 +6,7 @@ create table pessoas(
 	data_nascimento date not null,
 	genero varchar(20) not null,
 	estado_civil varchar(20) not null,
-	rg varchar(11) not null
+	rg varchar(14) not null
 );
 
 create table medicos(
@@ -62,3 +62,26 @@ create table telefones(
 
 USE master;
 DROP DATABASE consultorio;
+
+insert into pessoas values('1983-05-23', 'masculino', 'casado', '33.333.333-3');
+insert into pessoas values('1987-11-09', 'masculino', 'viuvo', '66.666.666-6');
+insert into pessoas values('2000-01-03', 'feminino', 'solteira', '12.345.678-9');
+insert into pessoas values('1990-07-21', 'feminino', 'casada', '11.333.555-0');
+insert into pessoas values('2005-03-11', 'masculino', 'solteiro', '44.111.777-3');
+insert into pessoas values('1982-09-15', 'feminino', 'divorciada', '55.555.555-5');
+insert into pessoas values('1975-12-30', 'masculino', 'solteiro', '77.777.777-7');
+insert into pessoas values('1995-04-18', 'feminino', 'casada', '88.888.888-8');
+insert into pessoas values('1988-10-05', 'masculino', 'viúvo', '99.999.999-9');
+insert into pessoas values('1970-03-25', 'feminino', 'casada', '10.101.010-1');
+
+insert into medicos values (1, '165215-sp');
+insert into medicos values (2, '678910-rj');
+insert into medicos values (3, '123456-pa');
+insert into medicos values (4, '456078-mg');
+insert into medicos values (5, '978567-es');
+
+insert into pacientes values(6, 'unimed');
+insert into pacientes values(7, 'amil');
+insert into pacientes values(8, 'bradesco');
+insert into pacientes values(9, 'intermedica');
+insert into pacientes values(10, 'golden cross');

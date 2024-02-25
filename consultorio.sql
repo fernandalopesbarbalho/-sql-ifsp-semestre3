@@ -1,3 +1,8 @@
+-- USE master;
+-- DROP DATABASE consultorio;
+-- Adicionar diagrama
+
+-- 1) Criar as tabelas baseadas no diagrama do consultório apresentado
 create database consultorio;
 use consultorio;
 
@@ -31,8 +36,8 @@ create table consultas(
 	foreign key (id_paciente) references pacientes(id_pessoa)
 );
 
-create table exame(
-	id int not null primary key,
+create table exames(
+	id int not null primary key identity,
 	id_consulta int not null,
 	data_exame datetime not null,
 	exame varchar(100) not null,
@@ -60,9 +65,7 @@ create table telefones(
 	foreign key (id_pessoa) references pessoas(id)
 );
 
-USE master;
-DROP DATABASE consultorio;
-
+-- 2) Inserir no mínimo 5 linhas para cada tabela
 insert into pessoas values('1983-05-23', 'masculino', 'casado', '33.333.333-3');
 insert into pessoas values('1987-11-09', 'masculino', 'viuvo', '66.666.666-6');
 insert into pessoas values('2000-01-03', 'feminino', 'solteira', '12.345.678-9');
@@ -85,3 +88,72 @@ insert into pacientes values(7, 'amil');
 insert into pacientes values(8, 'bradesco');
 insert into pacientes values(9, 'intermedica');
 insert into pacientes values(10, 'golden cross');
+
+insert into consultas values('2024-02-11 13:25:00', 'Virose', 1, 6);
+insert into consultas values('2024-05-13 15:00:00', 'Gripe', 2, 7);
+insert into consultas values('2024-01-06 18:10:00', 'Dor de ouvido', 3, 8);
+insert into consultas values('2024-02-29 10:20:00', 'Dengue', 4, 9);
+insert into consultas values('2024-03-07 13:00:00', 'Dor muscular', 5, 10);
+
+insert into exames values(1, '2024-02-11 13:40:00', 'Observação dos sintomas');
+insert into exames values(2, '2024-05-13 15:25:00', 'Teste de covid negativo');
+insert into exames values(3, '2024-01-06 18:45:00', 'Observacao otologica');
+insert into exames values(4, '2024-02-29 10:55:00', 'Teste de dengue positivo');
+insert into exames values(5, '2024-03-07 13:25:00', 'Observação dos sintomas');
+
+insert into enderecos values(6, 'Rua Antiga', 566, '02645-090', 'Bairro Agua', 'Bahia', 'BA';
+insert into enderecos values(7, 'Avenida Principal', 1234, '12345-678', 'Centro', 'São Paulo', 'SP');
+insert into enderecos values(8, 'Rua das Flores', 987, '54321-098', 'Jardim Botânico', 'Curitiba', 'PR');
+insert into enderecos values(9, 'Praça da Liberdade', 456, '45678-321', 'Liberdade', 'Belo Horizonte', 'MG');
+insert into enderecos values(10, 'Avenida das Palmeiras', 741, '13579-246', 'Jardim das Palmeiras', 'Fortaleza', 'CE');
+
+insert into telefones values(1, 11, '99999-9999');
+insert into telefones values(2, 22, '93456-8901');
+insert into telefones values(3, 33, '94567-9012');
+insert into telefones values(4, 44, '95678-0123');
+insert into telefones values(5, 55, '96789-1234');
+insert into telefones values(6, 66, '97890-2345');
+insert into telefones values(7, 77, '98901-3456');
+insert into telefones values(8, 88, '99012-4567');
+insert into telefones values(9, 99, '90123-5678');
+insert into telefones values(10, 10, '91234-6789');
+
+-- 3) Escreva e execute um select para exibir todos os dados de cada tabela
+select * from pessoas;
+select * from medicos;
+select * from pacientes;
+select * from consultas;
+select * from exames;
+select * from enderecos;
+select * from telefones;
+
+-- 4) Altere a tabela de pessoas para adicionar o campo nome
+alter table pessoas
+	add nome varchar(200) not null;
+
+-- 5) Atualize os registros da tabela de pessoas adicionando um nome para cada tupla (para cada pessoa)
+update pessoas set nome = 'Jose Silva Oliveira' where id = 1;
+update pessoas set nome = 'Pedro Santos' where id = 2;
+update pessoas set nome = 'Maria Fernanda Oliveira' where id = 3;
+update pessoas set nome = 'Carolina Costa' where id = 4;
+update pessoas set nome = 'Lucas Pereira Gomes' where id = 5;
+update pessoas set nome = 'Juliana Reis Souza' where id = 6;
+update pessoas set nome = 'Rogerio Ferreira' where id = 7;
+update pessoas set nome = 'Camila Almeida Lima' where id = 8;
+update pessoas set nome = 'Fabricio Rodrigues' where id = 9;
+update pessoas set nome = 'Alice Nunes' where id = 10;
+
+-- 6) Escreva um select para visualizar as consultas de um médico (informe o id do médico)
+select * from consultas where id_medico = 3;
+
+-- 7) Escreva um select para visualizar os exames de uma consulta (informe o id da consulta)
+select * from exames where id_consulta = 1;
+
+-- 8) Escreva um select para visualizar todos os telefones de uma pessoa (informe o id da pessoa)
+select * from telefones where id_pessoa = 5;
+
+-- 9)  Desafio 1: crie uma consulta (select) para visualizar todos os dados dos pacientes (devem ser exibidos os dados da tabela de pessoa e paciente ao mesmo tempo)
+select pessoas.*, pacientes.* from pessoas inner join pacientes on pessoas.id = pacientes.id_pessoa;
+
+-- 10) Desafio 2: crie uma consulta (select) para visualizar todos os dados dos médicos (devem ser exibidos os dados da tabela de pessoa e medico ao mesmo tempo)
+select pessoas.*, medicos.* from pessoas inner join medicos on pessoas.id = medicos.id_pessoa;

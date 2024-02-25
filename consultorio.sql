@@ -1,6 +1,5 @@
 -- USE master;
 -- DROP DATABASE consultorio;
--- Adicionar diagrama
 
 -- 1) Criar as tabelas baseadas no diagrama do consultório apresentado
 create database consultorio;

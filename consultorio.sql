@@ -1,6 +1,3 @@
--- USE master;
--- DROP DATABASE consultorio;
-
 -- 1) Criar as tabelas baseadas no diagrama do consultório apresentado
 create database consultorio;
 use consultorio;
@@ -89,18 +86,18 @@ insert into pacientes values(9, 'Intermedica');
 insert into pacientes values(10, 'Golden Cross');
 
 insert into consultas values('2024-02-11 13:25:00', 'Virose', 1, 6);
-insert into consultas values('2024-05-13 15:00:00', 'Gripe', 2, 7);
+insert into consultas values('2024-05-03 15:00:00', 'Gripe', 2, 7);
 insert into consultas values('2024-01-06 18:10:00', 'Dor de ouvido', 3, 8);
-insert into consultas values('2024-02-29 10:20:00', 'Dengue', 4, 9);
+insert into consultas values('2024-02-01 10:20:00', 'Dengue', 4, 9);
 insert into consultas values('2024-03-07 13:00:00', 'Dor muscular', 5, 10);
 
 insert into exames values(1, '2024-02-11 13:40:00', 'Observação dos sintomas');
-insert into exames values(2, '2024-05-13 15:25:00', 'Teste de covid negativo');
+insert into exames values(2, '2024-05-03 15:05:00', 'Teste de covid negativo');
 insert into exames values(3, '2024-01-06 18:45:00', 'Observacao otologica');
-insert into exames values(4, '2024-02-29 10:55:00', 'Teste de dengue positivo');
+insert into exames values(4, '2024-02-01 10:55:00', 'Teste de dengue positivo');
 insert into exames values(5, '2024-03-07 13:25:00', 'Observação dos sintomas');
 
-insert into enderecos values(6, 'Rua Antiga', 566, '02645-090', 'Bairro Agua', 'Bahia', 'BA';
+insert into enderecos values(6, 'Rua Antiga', 566, '02645-090', 'Bairro Agua', 'Bahia', 'BA');
 insert into enderecos values(7, 'Avenida Principal', 1234, '12345-678', 'Centro', 'Sao Paulo', 'SP');
 insert into enderecos values(8, 'Rua das Flores', 987, '54321-098', 'Jardim Botanico', 'Curitiba', 'PR');
 insert into enderecos values(9, 'Praça da Liberdade', 456, '45678-321', 'Liberdade', 'Belo Horizonte', 'MG');
@@ -127,8 +124,7 @@ select * from enderecos;
 select * from telefones;
 
 -- 4) Altere a tabela de pessoas para adicionar o campo nome
-alter table pessoas
-	add nome varchar(200) not null;
+alter table pessoas add nome varchar(200);
 
 -- 5) Atualize os registros da tabela de pessoas adicionando um nome para cada tupla (para cada pessoa)
 update pessoas set nome = 'Jose Silva Oliveira' where id = 1;

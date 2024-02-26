@@ -73,7 +73,7 @@ insert into pessoas values('2005-03-11', 'masculino', 'solteiro', '44.111.777-3'
 insert into pessoas values('1982-09-15', 'feminino', 'divorciada', '55.555.555-5');
 insert into pessoas values('1975-12-30', 'masculino', 'solteiro', '77.777.777-7');
 insert into pessoas values('1995-04-18', 'feminino', 'casada', '88.888.888-8');
-insert into pessoas values('1988-10-05', 'masculino', 'viúvo', '99.999.999-9');
+insert into pessoas values('1988-10-05', 'masculino', 'viuvo', '99.999.999-9');
 insert into pessoas values('1970-03-25', 'feminino', 'casada', '10.101.010-1');
 
 insert into medicos values (1, '165215-sp');
@@ -82,11 +82,11 @@ insert into medicos values (3, '123456-pa');
 insert into medicos values (4, '456078-mg');
 insert into medicos values (5, '978567-es');
 
-insert into pacientes values(6, 'unimed');
-insert into pacientes values(7, 'amil');
-insert into pacientes values(8, 'bradesco');
-insert into pacientes values(9, 'intermedica');
-insert into pacientes values(10, 'golden cross');
+insert into pacientes values(6, 'Unimed');
+insert into pacientes values(7, 'Amil');
+insert into pacientes values(8, 'Bradesco');
+insert into pacientes values(9, 'Intermedica');
+insert into pacientes values(10, 'Golden Cross');
 
 insert into consultas values('2024-02-11 13:25:00', 'Virose', 1, 6);
 insert into consultas values('2024-05-13 15:00:00', 'Gripe', 2, 7);
@@ -101,8 +101,8 @@ insert into exames values(4, '2024-02-29 10:55:00', 'Teste de dengue positivo');
 insert into exames values(5, '2024-03-07 13:25:00', 'Observação dos sintomas');
 
 insert into enderecos values(6, 'Rua Antiga', 566, '02645-090', 'Bairro Agua', 'Bahia', 'BA';
-insert into enderecos values(7, 'Avenida Principal', 1234, '12345-678', 'Centro', 'São Paulo', 'SP');
-insert into enderecos values(8, 'Rua das Flores', 987, '54321-098', 'Jardim Botânico', 'Curitiba', 'PR');
+insert into enderecos values(7, 'Avenida Principal', 1234, '12345-678', 'Centro', 'Sao Paulo', 'SP');
+insert into enderecos values(8, 'Rua das Flores', 987, '54321-098', 'Jardim Botanico', 'Curitiba', 'PR');
 insert into enderecos values(9, 'Praça da Liberdade', 456, '45678-321', 'Liberdade', 'Belo Horizonte', 'MG');
 insert into enderecos values(10, 'Avenida das Palmeiras', 741, '13579-246', 'Jardim das Palmeiras', 'Fortaleza', 'CE');
 

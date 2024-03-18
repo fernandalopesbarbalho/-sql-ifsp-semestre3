@@ -10,3 +10,6 @@ Criar tabelas baseadas no diagrama do consultório apresentado, inserir linhas n
 A partir do código fornecido pelo professor e seus exemplos de resolução, finalizar a atividade de execução de selects.
 
 ![diagrama_vendas](https://github.com/fernandalopesbarbalho/sql-ifsp-semestre3/assets/137642560/b440e43c-10ed-4b1a-b8bd-cd9f17e34326)
+
+## 3 - Vendas 2 - 18/03/2024
+Correção dos exercício 8 ao 22 e resolução do 23 ao 40.

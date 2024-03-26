@@ -454,7 +454,7 @@ where exists (
 );
 
 -- 52. Consultar os clientes que possuem pedidos com valor total acima de R$ 20,00. Usar exists
-select p.pes_nome as nome_cliente, ped.ped_numero, SUM(i.itp_qtd * i.itp_valor) as valor_total_pedido
+select p.pes_nome as nome_cliente, ped.ped_numero, SUM(i.itp_qtd * i.itp_valor) as valor_total
 from Pessoas p
 inner join Clientes c on p.pes_codigo = c.pes_codigo
 inner join Pedidos ped on c.pes_codigo = ped.cli_codigo

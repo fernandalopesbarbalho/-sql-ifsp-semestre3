@@ -13,3 +13,6 @@ A partir do código fornecido pelo professor e seus exemplos de resolução, fin
 
 ## Vendas 2 - 18/03/2024
 Correção dos exercício 8 ao 22 e resolução do 23 ao 40.
+
+## Vendas 3 - 26/03/2024
+Correção dos exercício 23 ao 40 e resolução do 41 ao 55.

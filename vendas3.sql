@@ -454,15 +454,19 @@ where exists (
 );
 
 -- 52. Consultar os clientes que possuem pedidos com valor total acima de R$ 20,00. Usar exists
-select * from Clientes c
+select p.pes_nome as nome_cliente, ped.ped_numero, SUM(i.itp_qtd * i.itp_valor) as valor_total_pedido
+from Pessoas p
+inner join Clientes c on p.pes_codigo = c.pes_codigo
+inner join Pedidos ped on c.pes_codigo = ped.cli_codigo
+inner join Itens_pedidos i on ped.ped_numero = i.ped_numero
 where exists (
     select 1
-    from Pedidos p
-    join Itens_pedidos i on p.ped_numero = i.ped_numero
-    where p.cli_codigo = c.pes_codigo
-    group by p.ped_numero
-    having SUM(itp_qtd * itp_valor) > 20
-);
+    from itens_pedidos i2
+    where i2.ped_numero = ped.ped_numero
+    group by i2.ped_numero
+    having SUM(i2.itp_qtd * i2.itp_valor) > 20
+)
+group by p.pes_nome, ped.ped_numero;
 
 -- 53. Consultar a data do sistema, e separadamente o ano, mês, dia, hora e minutos
 select CURRENT_TIMESTAMP as data_atual,

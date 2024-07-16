@@ -35,7 +35,7 @@ Correção dos exercício 23 ao 40 e resolução do 41 ao 55.
 ### Vendas Consulta 3
 Somente a atividade 3.
 
-## Vendas 4 (arquivo completo) - 02/04/2024.
+## Vendas 4 (arquivo completo) - 02/04/2024
 Resolução dos exercícios de Join.
 
 ### Vendas Consulta 4

@@ -181,6 +181,8 @@ insert into itens_pedidos values (5,5,1,0.85)
 
 select * from itens_pedidos
 
+-- Realize uma pesquisa e implemente procedures que realize as seguintes operações: Insert, update e delete de produtos; Insert, update e delete de funcionários.
+	
 -- Procedure é um conjunto de instruções SQL que pode ser armazenado no banco de dados e reutilizado posteriormente.
 -- A váriavel inicia com @.
 -- Para executar uma procedure basta utiilizar a cláusula EXECUTE seguido pelo nome da procedure e na frente o valor a ser utilizado como parâmetro.

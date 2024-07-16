@@ -40,3 +40,9 @@ Resolução dos exercícios de Join.
 
 ### Vendas Consulta 4
 Somente a atividade 4.
+
+## Vendas 5 (arquivo completo) - 16/07/2024
+Pesquisa e implementação de procedures que realizam: insert, update e delete de produtos e insert, update e delete de funcionários.
+
+### Vendas Procedure
+Apenas o exercício de procedure.

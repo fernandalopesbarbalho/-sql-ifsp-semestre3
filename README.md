@@ -11,7 +11,7 @@ A partir do código fornecido pelo professor e seus exemplos de resolução, fin
 
 ![diagrama_vendas](https://github.com/fernandalopesbarbalho/sql-ifsp-semestre3/assets/137642560/b440e43c-10ed-4b1a-b8bd-cd9f17e34326)
 
-### Vendas Banco
+### Vendas Banco Professor
 Somente o código do professor.
 
 ### Vendas Consulta 1

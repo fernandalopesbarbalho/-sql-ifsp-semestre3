@@ -1,4 +1,4 @@
--- Realize uma pesquisa e implemente procedures que realize as seguintes operações: Insert, update e delete de produtos; Insert, update e delete de funcionários.
+-- Realize uma pesquisa e implemente procedures que realizem as seguintes operações: Insert, update e delete de produtos; Insert, update e delete de funcionários.
 
 -- Procedure é um conjunto de instruções SQL que pode ser armazenado no banco de dados e reutilizado posteriormente.
 -- A váriavel inicia com @.

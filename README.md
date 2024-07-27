@@ -32,3 +32,7 @@ Resolução dos exercícios de Join.
 ## [Vendas Procedure](https://github.com/fernandalopesbarbalho/sql-ifsp-semestre3/blob/main/vendas_procedure.sql) - 16/07/2024
 Pesquisa e implementação de procedures que realizam: insert, update e delete de produtos e insert, update e delete de funcionários.
 
+## [Vendas Procedure 2](https://github.com/fernandalopesbarbalho/sql-ifsp-semestre3/blob/main/vendas_procedure2.sql) - 22/07/2024
+Procedures para inserção, atualização e deleção de pedidos.
+
+

@@ -37,4 +37,6 @@ Pesquisa e implementação de procedures que realizam: insert, update e delete d
 ## [Vendas Procedure 2](https://github.com/fernandalopesbarbalho/sql-ifsp-semestre3/blob/main/vendas_procedure2.sql) - 22/07/2024
 Procedures para inserção, atualização e deleção de pedidos.
 
+## [Vendas Try Catch](https://github.com/fernandalopesbarbalho/sql-ifsp-semestre3/blob/main/vendas_try_catch.sql) - 30/07/2024
+Pesquisa e implementação de procedures que realizam inserção de clientes e funcionários usando try/catch.
 

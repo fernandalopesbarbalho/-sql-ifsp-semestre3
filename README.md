@@ -40,3 +40,5 @@ Procedures para inserção, atualização e deleção de pedidos.
 ## [Vendas Try Catch](https://github.com/fernandalopesbarbalho/sql-ifsp-semestre3/blob/main/vendas_try_catch.sql) - 30/07/2024
 Pesquisa e implementação de procedures que realizam inserção de clientes e funcionários usando try/catch.
 
+## [Tabuada](https://github.com/fernandalopesbarbalho/sql-ifsp-semestre3/blob/main/tabuada.sql) - 04/08/2024
+Condicionais no SQL, recebe um parâmetro de número entre 1 e 10 e forma a tabuada.

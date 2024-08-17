@@ -42,3 +42,6 @@ Pesquisa e implementação de procedures que realizam inserção de clientes e f
 
 ## [Tabuada](https://github.com/fernandalopesbarbalho/sql-ifsp-semestre3/blob/main/tabuada.sql) - 04/08/2024
 Condicionais no SQL, recebe um parâmetro de número entre 1 e 10 e forma a tabuada.
+
+## [View Pedidos](https://github.com/fernandalopesbarbalho/sql-ifsp-semestre3/blob/main/view_pedidos.sql) - 12/08/2024
+Crie uma view para visualizar pedidos.

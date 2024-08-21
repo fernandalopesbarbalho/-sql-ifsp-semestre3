@@ -45,3 +45,6 @@ Condicionais no SQL, recebe um parâmetro de número entre 1 e 10 e forma a tabu
 
 ## [View Pedidos](https://github.com/fernandalopesbarbalho/sql-ifsp-semestre3/blob/main/view_pedidos.sql) - 12/08/2024
 Crie uma view para visualizar pedidos.
+
+## [Vendas While Throw](https://github.com/fernandalopesbarbalho/sql-ifsp-semestre3/blob/main/vendas_while_throw.sql) - 18/08/2024
+Procedure que utiliza if, while e throw para inserir clientes e funcionários.

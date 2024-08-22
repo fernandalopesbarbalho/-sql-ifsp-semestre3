@@ -48,3 +48,6 @@ Crie uma view para visualizar pedidos.
 
 ## [Vendas While Throw](https://github.com/fernandalopesbarbalho/sql-ifsp-semestre3/blob/main/vendas_while_throw.sql) - 18/08/2024
 Procedure que utiliza if, while e throw para inserir clientes e funcionários.
+
+## [Prova](https://github.com/fernandalopesbarbalho/sql-ifsp-semestre3/blob/main/prova.sql) - 21/08/2024
+Execícios avaliativos realizados com limite de tempo, avaliando posteriormente é passível de muitas melhorias e otimizações.

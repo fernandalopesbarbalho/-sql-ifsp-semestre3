@@ -74,7 +74,7 @@ Mostre o código para exibir (utilizando a view criada) os pedidos com a situaç
 
 Se for necessário atualize os dados do seu banco para testar a consulta */
 
--- Criando a para exibir todos os dados de pedido
+-- Criando a view para exibir todos os dados de pedido
 create view vw_pedidos
 as
 select

@@ -50,4 +50,7 @@ Crie uma view para visualizar pedidos.
 Procedure que utiliza if, while e throw para inserir clientes e funcionários.
 
 ## [Prova](https://github.com/fernandalopesbarbalho/sql-ifsp-semestre3/blob/main/prova.sql) - 21/08/2024
-Execícios avaliativos realizados com limite de tempo, avaliando posteriormente é passível de muitas melhorias e otimizações.
+Procedure e view no banco de dados vendas: Execícios avaliativos realizados com limite de tempo, avaliando posteriormente é passível de muitas melhorias e otimizações.
+
+## [Vendas Procedure View](https://github.com/fernandalopesbarbalho/sql-ifsp-semestre3/blob/main/vendas_procedure_view.sql) - 31/08/2024
+Procedure e view no banco de dados vendas: Exercício pós-prova.

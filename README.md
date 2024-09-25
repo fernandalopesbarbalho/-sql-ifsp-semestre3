@@ -1,6 +1,8 @@
 # Comandos SQL 2
 Comandos em SQL produzidos em aulas, atividades e trabalhos durante o terceiro semestre de Análise e Desenvolvimento de Sistemas (IFSP), referente à matéria de Programação e Administração de Banco de Dados.
 
+Nota final: 9,5.
+
 ## [Consultório](https://github.com/fernandalopesbarbalho/sql-ifsp-semestre3/blob/main/consultorio.sql) - 21/02/2024
 Criar tabelas baseadas no diagrama do consultório apresentado, inserir linhas nas tabelas, alterar dados e executar selects.
 
